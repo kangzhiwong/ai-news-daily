@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI News Digest — Last 2 Weeks</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --surface: #181b24;
+    --surface-2: #1f2330;
+    --border: #2a2f3d;
+    --text: #e6e8ee;
+    --text-dim: #9aa0ac;
+    --accent: #7c9cff;
+    --accent-2: #b18cff;
+    --tag-practice: #3b6cff;
+    --tag-models: #b18cff;
+    --tag-governance: #e56b6f;
+    --tag-methods: #2fbd71;
+    --tag-general: #f4a261;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 24px;
+    margin-bottom: 32px;
+  }
+  h1 {
+    font-size: 2.2rem;
+    margin: 0 0 8px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .subtitle {
+    color: var(--text-dim);
+    font-size: 0.95rem;
+    margin: 0;
+  }
+  .intro {
+    color: var(--text-dim);
+    margin: 16px 0 0;
+    max-width: 70ch;
+  }
+  h2 {
+    font-size: 1.15rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-dim);
+    margin: 40px 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  .item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px 22px;
+    margin-bottom: 14px;
+    transition: border-color 0.15s ease, transform 0.15s ease;
+  }
+  .item:hover {
+    border-color: var(--accent);
+    transform: translateY(-1px);
+  }
+  .item h3 {
+    margin: 0 0 8px;
+    font-size: 1.05rem;
+    line-height: 1.35;
+  }
+  .item p {
+    margin: 0 0 12px;
+    color: var(--text);
+    font-size: 0.95rem;
+  }
+  .why-it-matters {
+    background: var(--surface-2);
+    border-left: 3px solid var(--accent);
+    padding: 8px 12px;
+    margin: 0 0 12px;
+    font-size: 0.88rem;
+    color: var(--text-dim);
+  }
+  .why-it-matters strong {
+    color: var(--text);
+  }
+  .item-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    font-size: 0.85rem;
+  }
+  .tag {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #fff;
+  }
+  .tag-practice { background: var(--tag-practice); }
+  .tag-models { background: var(--tag-models); }
+  .tag-governance { background: var(--tag-governance); }
+  .tag-methods { background: var(--tag-methods); }
+  .tag-general { background: var(--tag-general); }
+  .source {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s ease;
+  }
+  .source:hover {
+    border-bottom-color: var(--accent);
+  }
+  .source-host {
+    color: var(--text-dim);
+    font-size: 0.82rem;
+  }
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--text-dim);
+    font-size: 0.85rem;
+  }
+  footer a { color: var(--accent); text-decoration: none; }
+  .refresh-note {
+    margin-top: 8px;
+    color: var(--text-dim);
+    font-size: 0.82rem;
+  }
+  @media (max-width: 600px) {
+    .container { padding: 32px 16px 64px; }
+    h1 { font-size: 1.7rem; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI News Digest</h1>
+    <p class="subtitle">Items from the <strong>last 2 weeks</strong> across general AI, the audit profession, models &amp; tools, and governance.</p>
+    <p class="subtitle">Last updated: <strong>9 June 2026</strong> · Auto-refreshes daily at <strong>09:00 SGT</strong>.</p>
+    <p class="intro">A snapshot of recent AI developments — broader industry signals, peer-firm activity in the audit profession, the models and tools changing what teams can build, and the governance landscape shaping how AI gets deployed.</p>
+  </header>
+
+  <!-- ─────────── GENERAL AI NEWS ─────────── -->
+  <h2>General AI News</h2>
+
+  <article class="item">
+    <h3>Anthropic warns of recursive self-improvement; Claude wrote 80% of its own production code in May</h3>
+    <p>In <em>"When AI Builds Itself"</em> (4 Jun 2026), Anthropic disclosed that <strong>over 80% of code merged into its production codebase in May 2026 was authored by Claude</strong> — up from low single digits when Claude Code launched in early 2025. Task horizons reliably handled by Claude have roughly doubled every four months. The post argues the world should preserve the option to <strong>slow or temporarily pause frontier AI development</strong>.</p>
+    <div class="why-it-matters"><strong>Why it matters:</strong> If frontier models are now substantively building themselves, two things shift quickly: AI tooling roadmaps compress, and governance questions about "how do you audit an AI that wrote itself?" enter the mainstream. Expect both adoption pressure and regulator attention to rise through 2026.</div>
+    <div class="item-meta">
+      <span class="tag tag-general">General</span>
+      <a class="source" href="https://www.anthropic.com/institute/recursive-self-improvement" target="_blank" rel="noopener">Read source →</a>
+      <span class="source-host">anthropic.com · 4 Jun 2026</span>
+    </div>
+  </article>
+
+  <article class="item">
+    <h3>Anthropic raises $65B at a $965B valuation — surpasses OpenAI's private valuation</h3>
+    <p>Anthropic closed a $65B funding round that took its post-money valuation to <strong>$965B</strong>, edging past OpenAI's $852B private-market mark for the first time. The round caps a streak in which the four largest frontier labs collectively raised $188B in a single quarter.</p>
+    <div class="why-it-matters"><strong>Why it matters:</strong> Validates Anthropic as a strategic — not just tactical — frontier vendor, and signals intensifying competition and pricing pressure on enterprise Claude offerings. Worth keeping Claude on any enterprise model-evaluation shortlist alongside the Microsoft and Google options.</div>
+    <div class="item-meta">
+      <span class="tag tag-general">General</span>
+      <a class="source" href="https://medium.com/@davidakpovi/ai-news-week-of-june-1-to-june-7-2026-7957940c805a" target="_blank" rel="noopener">Read source →</a>
+      <span class="source-host">medium.com · 1–7 Jun 2026</span>
+    </div>
+  </article>
+
+  <article class="item">
+    <h3>xAI signs federal AI contract with US GSA — Grok 4 across all federal agencies</h3>
+    <p>xAI signed a contract with the US General Services Administration in early June 2026 providing <strong>all federal agencies access to Grok 4 and Grok 4 Fast for 18 months</strong> (through March 2027), with dedicated xAI engineering support.</p>
+    <div class="why-it-matters"><strong>Why it matters:</strong> US federal procurement is now a serious channel for frontier-model vendors. A useful leading indicator of what large regulated organisations are willing to accept on AI vendor risk and model assurance.</div>
+    <div class="item-meta">
+      <span class="tag tag-general">General</span>
+      <a class="source" href="https://medium.com/@davidakpovi/ai-news-week-of-june-1-to-june-7-2026-7957940c805a" target="_blank" rel="noopener">Read source →</a>
+      <span class="source-host">medium.com · 1–7 Jun 2026</span>
+    </div>
+  </article>
+
+  <article class="item">
+    <h3>OpenAI releases GPT-Rosalind — a model purpose-built for life-sciences research</h3>
+    <p>On <strong>4 June 2026</strong>, OpenAI released <strong>GPT-Rosalind</strong>, combining GPT-5.5's agentic coding capabilities with deeper model intelligence in drug-discovery and life-sciences domains. Benchmark leaks also indicate a June release window for a broader <strong>GPT-5.6</strong>.</p>
+    <div class="why-it-matters"><strong>Why it matters:</strong> Domain-specialised frontier models are no longer a research curiosity — they're shipping. Worth watching whether comparable specialisations land for adjacent professional domains; when they do, generic-LLM + RAG approaches in those domains may need rethinking.</div>
+    <div class="item-meta">
+      <span class="tag tag-general">General</span>
+      <a class="source" href="https://www.buildfastwithai.com/blogs/ai-news-today-june-7-2026" target="_blank" rel="noopener">Read source →</a>
+      <span class="source-host">buildfastwithai.com · 7 Jun 2026</span>
+    </div>
+  </article>
+
+  <article class="item">
+    <h3>Google raises $80B for AI infrastructure; SoftBank pledges €75B for 5 GW of French AI data centres</h3>
+    <p>Google is raising <strong>$80B in equity</strong> to fund its AI-infrastructure buildout, and SoftBank announced an investment of up to <strong>€75B to develop 5 GW of AI data-centre capacity in France</strong>. Both moves landed in the first week of June.</p>
+    <div class="why-it-matters"><strong>Why it matters:</strong> Capital is being committed at energy-grid scale — compute capacity, power and physical data-centre location are becoming strategic constraints, not just commercial line items. Useful context for conversations about what's actually driving AI capex.</div>
+    <div class="item-meta">
+      <span class="tag tag-general">General</span>
+      <a class="source" href="https://medium.com/@davidakpovi/ai-news-week-of-june-1-to-june-7-2026-7957940c805a" target="_blank" rel="noopener">Read source →</a>
+      <span class="source-host">medium.com · 1–7 Jun 2026</span>
+    </div>
+  </article>
+
+  <!-- ─────────── PRACTICE ─────────── -->
+  <h2>AI in the Audit Profession</h2>
+
+  <article class="item">
+    <h3>RSM US launches "Ask Luca" and commits $1B to scale its AI strategy</h3>
+    <p>RSM US debuted <strong>Ask Luca</strong>, a generative AI assistant inside its RSM Luca digital audit ecosystem, giving 4,000+ assurance professionals real-time answers grounded in the firm's own assurance manuals, practice aids and technical accounting guides. The launch sits inside a <strong>$1B, three-year investment</strong> to scale firm-wide AI capability for the middle market.</p>
+    <div class="why-it-matters"><strong>Why it matters:</strong> Sets a template most audit firms are now measured against: RAG over internal authoritative content, with citations back to source guidance. Firm-internal assistants of this shape are becoming baseline rather than differentiator.</div>
+    <div class="item-meta">
+      <span class="tag tag-practice">Practice</span>
+      <a class="source" href="https://rsmus.com/newsroom/2026/rsm-launches-ask-luca.html" target="_blank" rel="noopener">Read source →</a>
+      <span class="source-host">rsmus.com · Jan 2026</span>
+    </div>
+  </article>
+
+  <article class="item">
+    <h3>EY launches enterprise-scale agentic AI for assurance</h3>
+    <p>EY announced a global roll-out of <strong>enterprise-scale agentic AI in Assurance</strong> — integrated with Microsoft technology — covering quality, workflow transformation and client/people experience. Part of the broader Big-4 push from AI pilots into firm-wide audit-transformation programs.</p>
+    <div class="why-it-matters"><strong>Why it matters:</strong> Agentic (multi-step, planner-driven) systems — not single-prompt assistants — are now the headline narrative at the Big 4. Useful prior art for anyone scoping agentic workpaper or document-analysis tooling.</div>
+    <div class="item-meta">
+      <span class="tag tag-practice">Practice</span>
+      <a class="source" href="https://www.ey.com/en_gl/newsroom/2026/04/ey-launches-enterprise-scale-agentic-ai-to-redefine-the-audit-experience-for-the-ai-era" target="_blank" rel="noopener">Read source →</a>
+      <span class="source-host">ey.com · Apr 2026</span>
+    </div>
+  </article>
+
+  <article class="item">
+    <h3>BDO's "Chat BDO" goes from pilot to production</h3>
+    <p>BDO's internal GenAI platform combines intelligent document processing, RAG over internal knowledge bases, anomaly detection, and AI assistants that draft reports, summarise regulations and analyse financial data. Notably, it's positioned for <strong>staff productivity and research, not direct client deliverables</strong> — a deliberate compliance-driven boundary.</p>
+    <div class="why-it-matters"><strong>Why it matters:</strong> The pilot-to-production journey (and the staff-productivity-vs-client-deliverable line) is the canonical shape of audit-firm GenAI deployments — a clean reference for any organisation scoping its own rollout.</div>
+    <div class="item-meta">
+      <span class="tag tag-practice">Practice</span>
+      <a class="source" href="https://www.techtarget.com/searchenterpriseai/feature/GenAI-in-accounting-Chat-BDOs-journey-from-pilot-to-production" target="_blank" rel="noopener">Read source →</a>
+      <span class="source-host">techtarget.com</span>
+    </div>
+  </article>
+
+  <article class="item">
+    <h3>Big Four AI hiring overtakes auditor recruitment</h3>
+    <p>AI-role share at the Big Four has tripled in three years and now exceeds straight auditor hiring. The Big Four are no longer hiring primarily to <em>do</em> audit work — they're hiring to build the technology that performs audit work and to sell that technology to clients.</p>
+    <div class="why-it-matters"><strong>Why it matters:</strong> Audit firms are restructuring around AI capability. "Data scientists embedded in audit" is becoming the org chart rather than a side bet, with knock-on effects for talent demand and career trajectories across the profession.</div>
+    <div class="item-meta">
+      <span class="tag tag-practice">Practice</span>
+      <a class="source" href="https://www.resultsense.com/insights/2026-05-20-big-four-ai-hiring-eclipses-audit-frc-implications/" target="_blank" rel="noopener">Read source →</a>
+      <span class="source-host">resultsense.com · 20 May 2026</span>
+    </div>
+  </article>
+
+  <article class="item">
+    <h3>IAASB chooses non-authoritative AI guidance; PCAOB still mapping the terrain</h3>
+    <p>The IAASB is publishing <strong>non-authoritative guidance</strong> rather than new binding standards for AI in assurance, informed by eight global roundtables with 240+ stakeholders. The PCAOB has acknowledged it currently <em>lacks</em> clear standards on what counts as an acceptable AI-based audit, and recent PCAOB speeches frame AI as both an audit-quality opportunity and a regulatory gap.</p>
+    <div class="why-it-matters"><strong>Why it matters:</strong> No binding "use this model, document it this way" rules yet — which means firms' documentation, validation and audit-trail choices are setting de facto standards. Audit-trail and inspection-defensibility patterns will harden into expectations before formal standards arrive.</div>
+    <div class="item-meta">
+      <span class="tag tag-practice">Practice</span>
+      <a class="source" href="https://www.accountingtoday.com/news/iaasb-to-pursue-non-authoritative-guidance-for-ai" target="_blank" rel="noopener">Read source →</a>
+      <span class="source-host">accountingtoday.com</span>
+    </div>
+  </article>
+
+  <!-- ─────────── MODELS & TOOLS ─────────── -->
+  <h2>Models &amp; Tools</h2>
+
+  <article class="item">
+    <h3>Microsoft ships first-party models: MAI-Code-1-Flash + MAI-Thinking-1</h3>
+    <p>At Build (<strong>2 Jun 2026</strong>), Microsoft introduced <strong>MAI-Code-1-Flash</strong> (code generation, wired into GitHub Copilot and VS Code) and <strong>MAI-Thinking-1</strong> (reasoning). Positioned as cost-efficient alternatives to OpenAI calls on Azure.</p>
+    <div class="why-it-matters"><strong>Why it matters:</strong> For Microsoft-anchored stacks (Azure, M365, Copilot, Fabric), these become natural procurement options alongside OpenAI-hosted models — and reshape the per-token cost comparison against GPT-4-class alternatives.</div>
+    <div class="item-meta">
+      <span class="tag tag-models">Models &amp; tools</span>
+      <a class="source" href="https://www.cnbc.com/2026/06/02/microsoft-unveils-new-ai-models-lessen-reliance-on-openai-lower-costs.html" target="_blank" rel="noopener">Read source →</a>
+      <span class="source-host">cnbc.com · 2 Jun 2026</span>
+    </div>
+  </article>
+
+  <article class="item">
+    <h3>June model wave — NVIDIA Nemotron 3 Ultra, MiniMax M3, Qwen3 Coder Next</h3>
+    <p>A dense week of open / open-weights releases: <strong>MiniMax M3</strong> (1 Jun), <strong>NVIDIA Nemotron 3 Ultra 550B A55B</strong> with 262K-token context (4 Jun), and <strong>Qwen3 Coder Next</strong> plus several MiniMax variants (6 Jun). The cadence — new models every ~2 days — continues 2026's pattern.</p>
+    <div class="why-it-matters"><strong>Why it matters:</strong> For sensitive data that can't leave a controlled tenant, open-weights are increasingly viable for production use. An internal eval comparing one of these against a hosted-LLM baseline is a low-cost way to learn before committing architecture.</div>
+    <div class="item-meta">
+      <span class="tag tag-models">Models &amp; tools</span>
+      <a class="source" href="https://llm-stats.com/llm-updates" target="_blank" rel="noopener">Read source →</a>
+      <span class="source-host">llm-stats.com · Jun 2026</span>
+    </div>
+  </article>
+
+  <article class="item">
+    <h3>Google ships Agentic RAG on Gemini Enterprise — 34% factuality lift over standard RAG</h3>
+    <p>Google released a hosted version of <strong>Cross-Corpus Retrieval powered by Agentic RAG</strong> on its Gemini Enterprise Agent Platform. Reported <strong>+34% accuracy on factuality datasets vs. standard RAG</strong>, with better grounding and improved reasoning across multiple domain-specific tasks.</p>
+    <div class="why-it-matters"><strong>Why it matters:</strong> Agentic-RAG architectures (planner + multi-step retrieval, not single-pass) are starting to deliver materially better grounding — exactly the metric that matters for high-stakes RAG. Worth a controlled experiment before the next model-refresh cycle.</div>
+    <div class="item-meta">
+      <span class="tag tag-models">Models &amp; tools</span>
+      <a class="source" href="https://research.google/blog/unlocking-dependable-responses-with-gemini-enterprise-agent-platforms-agentic-rag/" target="_blank" rel="noopener">Read source →</a>
+      <span class="source-host">research.google · May 2026</span>
+    </div>
+  </article>
+
+  <article class="item">
+    <h3>GitHub Copilot switches to usage-based "AI Credits"</h3>
+    <p>From <strong>1 June 2026</strong>, all GitHub Copilot plans bill on usage-based AI Credits rather than flat seat pricing, with new user-level budgets and an upgrade path to "Copilot Max."</p>
+    <div class="why-it-matters"><strong>Why it matters:</strong> Reinforces the broader trend — token-economics are now the default unit of AI cost, including for the internal tools that get charged back. Affects how teams forecast dev-tooling spend.</div>
+    <div class="item-meta">
+      <span class="tag tag-models">Models &amp; tools</span>
+      <a class="source" href="https://www.marketingprofs.com/opinions/2026/54909/ai-update-june-5-2026-ai-news-and-views-from-the-past-week" target="_blank" rel="noopener">Read source →</a>
+      <span class="source-host">marketingprofs.com · 5 Jun 2026</span>
+    </div>
+  </article>
+
+  <!-- ─────────── GOVERNANCE ─────────── -->
+  <h2>AI Governance &amp; Regulation</h2>
+
+  <article class="item">
+    <h3>EU AI Act enforcement gets independent-expert backing as August deadline nears</h3>
+    <p>On <strong>1 June 2026</strong>, the European Commission confirmed independent-expert support for AI Act enforcement. The Act's transparency rules are still scheduled for <strong>2 August 2026</strong>, though the Commission's November 2025 "Digital Omnibus" proposes deferring high-risk-system compliance to December 2027 — political outcome still open.</p>
+    <div class="why-it-matters"><strong>Why it matters:</strong> The August deadline is ~8 weeks out and not visibly slipping. Organisations with EU exposure are on twin-track planning — expect classification questions ("is this high-risk?") and transparency-disclosure design to absorb meaningful time over the next two months.</div>
+    <div class="item-meta">
+      <span class="tag tag-governance">Governance</span>
+      <a class="source" href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" target="_blank" rel="noopener">Read source →</a>
+      <span class="source-host">digital-strategy.ec.europa.eu · 1 Jun 2026</span>
+    </div>
+  </article>
+
+  <article class="item">
+    <h3>European Commission proposes Tech Sovereignty package</h3>
+    <p>On <strong>3 June 2026</strong>, the European Commission proposed a Tech Sovereignty package aimed at strengthening Europe's digital autonomy and resilience, alongside pending guidance on labelling AI-generated content.</p>
+    <div class="why-it-matters"><strong>Why it matters:</strong> Another signal that EU-tenant data residency, sovereign cloud and open-weights deployments are moving from "nice-to-have" to baseline expectation for EU-touching workloads. Worth factoring into architecture decisions for multi-region tooling.</div>
+    <div class="item-meta">
+      <span class="tag tag-governance">Governance</span>
+      <a class="source" href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" target="_blank" rel="noopener">Read source →</a>
+      <span class="source-host">digital-strategy.ec.europa.eu · 3 Jun 2026</span>
+    </div>
+  </article>
+
+  <article class="item">
+    <h3>Colorado AI Act enforcement begins 30 June 2026</h3>
+    <p>Colorado's AI Act took effect 1 February 2026 with a grace period; <strong>enforcement begins 30 June</strong>. Covered businesses deploying "high-risk" AI for consequential decisions (employment, housing, healthcare, insurance, government services, etc.) must run risk-management programs, consumer disclosures and algorithmic-discrimination mitigation. California's automated-decision-technology rules follow on 1 January 2027.</p>
+    <div class="why-it-matters"><strong>Why it matters:</strong> Organisations with multi-state US footprints will increasingly need to produce impact assessments and discrimination-testing artefacts on request. Templating these now (before they're asked for) is cheap insurance.</div>
+    <div class="item-meta">
+      <span class="tag tag-governance">Governance</span>
+      <a class="source" href="https://www.gunder.com/en/news-insights/insights/2026-ai-laws-update-key-regulations-and-practical-guidance" target="_blank" rel="noopener">Read source →</a>
+      <span class="source-host">gunder.com · 2026</span>
+    </div>
+  </article>
+
+  <footer>
+    <p>Each "Read source →" link points to the underlying article. The AI-in-Audit-Profession section includes peer-firm news without a strict date cap; other sections are scoped to the last 2 weeks.</p>
+    <p class="refresh-note"><strong>Auto-refresh:</strong> a scheduled Claude routine regenerates this file each morning, and the page reloads at <strong>09:00 SGT (01:00 UTC)</strong> daily to pick up the new content.</p>
+  </footer>
+
+</div>
+
+<script>
+  // Auto-reload at 09:00 SGT (01:00 UTC) every day
+  (function scheduleDailyReload() {
+    var now = new Date();
+    var next = new Date();
+    next.setUTCHours(1, 0, 0, 0); // 09:00 SGT = 01:00 UTC
+    if (next.getTime() <= now.getTime()) {
+      next.setUTCDate(next.getUTCDate() + 1);
+    }
+    var msUntil = next.getTime() - now.getTime();
+    setTimeout(function () { window.location.reload(); }, msUntil);
+  })();
+</script>
+</body>
+</html>

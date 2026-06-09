@@ -1,0 +1,12 @@
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+
+# Claude Code session artefacts (in case anyone runs `claude` inside this repo)
+.claude/
+.claude-flow/
+.hive-mind/
+.mcp.json
