@@ -25,7 +25,7 @@ Regenerate `index.html` and `ai-news.html` (keep them identical) in this reposit
    - Governance: "EU AI Act enforcement", "US state AI law", "NIST ISO 42001 AI governance"
 4. **Pick items.** Strict rules:
    - **General, Models &amp; Tools, Governance:** sources must be dated within the last 14 days. If a date is unclear, skip.
-   - **AI in the Audit Profession:** no date cap — use the most relevant recent peer-firm AI news available (could be months old if the news cycle is quiet).
+   - **AI in the Audit Profession:** no date cap — use the most relevant recent AI news from the audit profession (could be months old if the news cycle is quiet). Do NOT use the phrase "peer-firm" in the public-facing copy.
    - Target count per section: General 5, Audit Profession 4–5, Models &amp; Tools 4, Governance 3.
 5. **Write each item.** For every news item:
    - `<h3>` headline

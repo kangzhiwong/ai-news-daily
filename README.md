@@ -22,7 +22,7 @@ A self-refreshing daily digest of AI news across four lenses: general industry s
 ## Section structure
 
 1. **General AI News** — broader industry signals from the last 14 days
-2. **AI in the Audit Profession** — peer-firm activity (no date cap; uses most recent relevant items)
+2. **AI in the Audit Profession** — activity in the audit profession (no date cap; uses most recent relevant items)
 3. **Models &amp; Tools** — frontier-model releases and dev tooling from the last 14 days
 4. **AI Governance &amp; Regulation** — laws, frameworks, standards from the last 14 days
 
