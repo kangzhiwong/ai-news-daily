@@ -6,10 +6,10 @@ A self-refreshing daily digest of AI news across four lenses: general industry s
 
 ## How the refresh works
 
-- A scheduled Claude Code routine runs every day at **09:00 SGT (01:00 UTC)**.
+- A scheduled Claude Code routine runs every day at **08:30 SGT (00:30 UTC)** — early enough that regeneration + GitHub Pages rebuild finishes before users see the page at 09:00.
 - The routine clones this repo, re-runs the curation prompt in [`curation-prompt.md`](./curation-prompt.md), regenerates `index.html` / `ai-news.html` with fresh items, and commits + pushes the result.
 - GitHub Pages serves the latest `index.html` at the URL above.
-- The HTML itself contains a small JS snippet that reloads the page at 09:00 SGT each day, so a tab left open will pick up the new content automatically.
+- The HTML itself contains a small JS snippet that reloads the page at **09:00 SGT** each day, so a tab left open will pick up the new content automatically.
 
 ## Files
 
