@@ -159,7 +159,7 @@
   <header>
     <h1>AI News Digest</h1>
     <p class="subtitle">Items from the <strong>last 2 weeks</strong> across general AI, the audit profession, models &amp; tools, and governance.</p>
-    <p class="subtitle">Last updated: <strong>10 June 2026</strong> · Auto-refreshes daily at <strong>09:00 SGT</strong>.</p>
+    <p class="subtitle">Last updated: <strong>11 June 2026</strong> · Auto-refreshes daily at <strong>09:00 SGT</strong>.</p>
     <p class="intro">A snapshot of recent AI developments — broader industry signals, activity in the audit profession, the models and tools changing what teams can build, and the governance landscape shaping how AI gets deployed.</p>
   </header>
 
@@ -167,13 +167,24 @@
   <h2>General AI News</h2>
 
   <article class="item">
-    <h3>OpenAI confidentially files for IPO at $852B valuation — Goldman, Morgan Stanley, JPMorgan lead</h3>
-    <p>OpenAI submitted a confidential S-1 prospectus to the SEC on <strong>8 June 2026</strong>, targeting a public listing as early as <strong>September 2026</strong> at a valuation analysts expect to exceed <strong>$1 trillion</strong>. The company reported annualised revenue of <strong>$25B</strong> as of February 2026 — up from $2B annually in 2023 — but is loss-making, spending roughly <strong>$1.22 for every $1 earned</strong>. The filing comes one week after rival Anthropic also filed confidentially with the SEC.</p>
-    <div class="why-it-matters"><strong>Why it matters:</strong> The dual IPO filings from OpenAI and Anthropic in the same week mark the start of a public-market price-discovery process for frontier AI companies. Revenue multiples and disclosed governance structures from the S-1 will become reference benchmarks for enterprise customers, regulators, and procurement teams assessing vendor financial stability and long-term commitments.</div>
+    <h3>Anthropic and OpenAI both file confidentially for IPO in the same week — dual listings target H2 2026 at combined ~$1.8T</h3>
+    <p>Anthropic filed a confidential S-1 with the SEC on <strong>1 June 2026</strong> at a valuation of approximately <strong>$965B</strong>, reporting a revenue run-rate of roughly <strong>$47B per year</strong> as of May 2026 — up from around $10B a year prior. OpenAI followed one week later, filing on <strong>8 June 2026</strong> at a valuation of <strong>$852B</strong> with annualised revenue of <strong>$25B</strong> but still loss-making. Combined with SpaceX's forthcoming Nasdaq listing, the three companies represent approximately <strong>$3.6 trillion</strong> in pre-IPO pipeline valuation.</p>
+    <div class="why-it-matters"><strong>Why it matters:</strong> For the first time, public-market investors will be able to compare two frontier AI labs side by side using disclosed financial data. Revenue multiples, governance structures, and financial sustainability metrics from both S-1 filings will become reference benchmarks for enterprise customers, regulators, and procurement teams assessing AI vendor stability and long-term commitments.</div>
     <div class="item-meta">
       <span class="tag tag-general">General</span>
-      <a class="source" href="https://www.cnbc.com/2026/06/08/openai-confidentially-files-for-ipo-prepping-wall-street-for-ai-debut.html" target="_blank" rel="noopener">Read source →</a>
-      <span class="source-host">cnbc.com · 8 Jun 2026</span>
+      <a class="source" href="https://techcrunch.com/2026/06/08/following-anthropic-openai-files-confidentially-for-ipo/" target="_blank" rel="noopener">Read source →</a>
+      <span class="source-host">techcrunch.com · 8 Jun 2026</span>
+    </div>
+  </article>
+
+  <article class="item">
+    <h3>Anthropic releases Claude Fable 5 — Mythos-class frontier model now publicly available</h3>
+    <p>Anthropic released <strong>Claude Fable 5</strong> and <strong>Claude Mythos 5</strong> on <strong>9 June 2026</strong>. Fable 5 is a Mythos-class model made safe for general use, described as state-of-the-art on nearly all tested benchmarks — including software engineering, scientific research, vision, and knowledge work. It supports up to <strong>128K output tokens</strong>, priced at <strong>$10 per million input / $50 per million output tokens</strong>, and is available across the Claude API, Amazon Bedrock, Vertex AI, and Microsoft Foundry. Safeguards fall back to Claude Opus 4.8 in fewer than <strong>5% of sessions</strong> in high-risk domains such as cybersecurity and CBRN. Claude Mythos 5 — the same underlying model with some safeguards lifted — is being deployed selectively through the US government's Project Glasswing.</p>
+    <div class="why-it-matters"><strong>Why it matters:</strong> The public release of a Mythos-class model marks a meaningful capability step-change for teams building on hosted APIs. The 128K output token limit and multi-cloud availability (Bedrock, Vertex, Foundry) simplify deployment for organisations with existing cloud infrastructure commitments. The built-in fallback to a safer model in high-risk query categories is worth tracking as a design pattern for enterprise AI guardrails.</div>
+    <div class="item-meta">
+      <span class="tag tag-general">General</span>
+      <a class="source" href="https://techcrunch.com/2026/06/09/anthropic-released-claude-fable-5-its-most-powerful-model-publicly-days-after-warning-ai-is-getting-too-dangerous/" target="_blank" rel="noopener">Read source →</a>
+      <span class="source-host">techcrunch.com · 9 Jun 2026</span>
     </div>
   </article>
 
@@ -196,17 +207,6 @@
       <span class="tag tag-general">General</span>
       <a class="source" href="https://www.anthropic.com/institute/recursive-self-improvement" target="_blank" rel="noopener">Read source →</a>
       <span class="source-host">anthropic.com · 4 Jun 2026</span>
-    </div>
-  </article>
-
-  <article class="item">
-    <h3>DeepSeek nears first-ever funding round of $7.4B at up to $59B valuation</h3>
-    <p>Chinese AI startup DeepSeek is nearing a deal to raise <strong>$7.4B</strong> in its first-ever external funding round, at a post-money valuation of <strong>$52–59B</strong> — roughly three times its estimated market value one year ago. Investors include Tencent and China's government-backed <strong>National Artificial Intelligence Industry Investment Fund</strong>. Founder Liang Wenfeng has committed to contribute roughly <strong>40% of the total round</strong> himself; the company will continue to focus on AGI research and open-source model development.</p>
-    <div class="why-it-matters"><strong>Why it matters:</strong> DeepSeek has already demonstrated that frontier-class open-weights models can be developed at materially lower cost than US counterparts. A $7.4B raise — backing an organisation that still publishes weights openly — adds significant resources to that programme and sustains competitive pressure on both frontier API pricing and the viability of running capable models entirely in-house.</div>
-    <div class="item-meta">
-      <span class="tag tag-general">General</span>
-      <a class="source" href="https://techstartups.com/2026/06/03/deepseek-set-to-raise-7-4-billion-in-first-funding-round-targeting-valuation-as-high-as-59-billion/" target="_blank" rel="noopener">Read source →</a>
-      <span class="source-host">techstartups.com · 3 Jun 2026</span>
     </div>
   </article>
 
@@ -330,13 +330,13 @@
   <h2>AI Governance &amp; Regulation</h2>
 
   <article class="item">
-    <h3>EU agrees Digital Omnibus deal — high-risk AI obligations deferred to December 2027, GPAI transparency on track for August</h3>
-    <p>On <strong>7 May 2026</strong>, the European Parliament and Council reached a provisional agreement on the Digital Omnibus on AI, amending the EU AI Act. <strong>High-risk AI system obligations</strong> (Annex III, use-based) are deferred from <strong>2 August 2026 to 2 December 2027</strong> — a <strong>16-month reprieve</strong>. Critically, <strong>GPAI model transparency and copyright compliance obligations remain on track for 2 August 2026</strong>, now less than eight weeks away. The agreement also introduces new prohibitions on AI-generated non-consensual intimate material, effective December 2026.</p>
-    <div class="why-it-matters"><strong>Why it matters:</strong> The deferral on high-risk system obligations reduces near-term compliance cost for organisations that had been urgently scoping Annex III requirements. However, GPAI transparency obligations — which affect any organisation deploying a general-purpose AI model — are still live for August. The risk of misclassifying a deployed system as "not high-risk" has now grown, given the diverging deadlines, making classification decisions more consequential in the next two months.</div>
+    <h3>EU AI Act enforcement machinery activates for August — Scientific Panel appointed, Article 50 consultation closes</h3>
+    <p>The European Commission appointed the <strong>AI Act Scientific Panel</strong> — comprising <strong>60 independent world-leading experts</strong> — and the <strong>Advisory Forum</strong> on <strong>1 June 2026</strong> to support enforcement, focusing on general-purpose AI model evaluation, systemic risk classification, and cross-border market surveillance. Separately, the public consultation on <strong>Article 50 transparency guidelines</strong> governing synthetic content labelling and watermarking closed on <strong>3 June 2026</strong>. Both developments occur as <strong>GPAI transparency and copyright compliance obligations</strong> remain on track for <strong>2 August 2026</strong> — now less than eight weeks away — regardless of the Digital Omnibus deferral on high-risk system obligations.</p>
+    <div class="why-it-matters"><strong>Why it matters:</strong> The appointment of 60 domain experts to advise the AI Office signals that enforcement will be technically sophisticated from day one. Any organisation deploying a general-purpose AI model in the EU faces live GPAI transparency obligations in August. The Article 50 watermarking guidelines — once finalised — will directly affect products generating synthetic images, audio, or video at scale. The diverging deadlines (GPAI August vs. high-risk December 2027) make system classification decisions more consequential in the weeks ahead.</div>
     <div class="item-meta">
       <span class="tag tag-governance">Governance</span>
-      <a class="source" href="https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/" target="_blank" rel="noopener">Read source →</a>
-      <span class="source-host">consilium.europa.eu · 7 May 2026</span>
+      <a class="source" href="https://digital-strategy.ec.europa.eu/en/news/ai-act-enforcement-gets-independent-expert-support" target="_blank" rel="noopener">Read source →</a>
+      <span class="source-host">digital-strategy.ec.europa.eu · 1 Jun 2026</span>
     </div>
   </article>
 
