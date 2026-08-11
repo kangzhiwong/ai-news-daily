@@ -159,12 +159,23 @@
   <header>
     <h1>AI News Digest</h1>
     <p class="subtitle">Items from the <strong>last 2 weeks</strong> across general AI, the audit profession, models &amp; tools, and governance.</p>
-    <p class="subtitle">Last updated: <strong>8 August 2026</strong> · Auto-refreshes daily at <strong>09:00 SGT</strong>.</p>
+    <p class="subtitle">Last updated: <strong>11 August 2026</strong> · Auto-refreshes daily at <strong>09:00 SGT</strong>.</p>
     <p class="intro">A snapshot of recent AI developments — broader industry signals, activity in the audit profession, the models and tools changing what teams can build, and the governance landscape shaping how AI gets deployed.</p>
   </header>
 
   <!-- ─────────── GENERAL AI NEWS ─────────── -->
   <h2>General AI News</h2>
+
+  <article class="item">
+    <h3>Nvidia and six Wall Street giants commit $500 billion to AI infrastructure — Apollo, Blackstone, BlackRock, Brookfield, Goldman Sachs and KKR create dedicated capital pools for Nvidia customers</h3>
+    <p>Nvidia announced on <strong>10 August 2026</strong> that it had assembled a coalition of six major asset managers — <strong>Apollo Global Management, Blackstone, BlackRock, Brookfield Asset Management, Goldman Sachs, and KKR</strong> — to mobilise more than <strong>$500 billion</strong> in third-party capital for AI infrastructure. The capital is earmarked for hyperscalers, frontier AI labs, and enterprises purchasing Nvidia hardware to build out data centres. CEO <strong>Jensen Huang</strong> stated he approached only the six firms and none declined. <strong>Nvidia shares fell 3.2%</strong> on the announcement, with analysts raising questions about circular financing dynamics in AI infrastructure. The deal represents the largest single coordinated capital commitment to AI buildout infrastructure to date.</p>
+    <div class="why-it-matters"><strong>Why it matters:</strong> A $500 billion coordinated financing package signals that AI infrastructure is now operating at a scale where traditional capital markets are being structurally reorganised around it — not as opportunistic venture bets but as dedicated asset-class pools. For enterprise teams planning multi-year AI infrastructure strategies, the involvement of large asset managers alongside Nvidia suggests that data centre and compute access will increasingly be financed through structured credit and asset-backed arrangements rather than pure equity. The market's negative reaction — despite the headline scale — reflects a wider debate about whether AI infrastructure demand can sustain the pace of investment being committed, a question with direct implications for inference pricing and cloud cost forecasting over the next 18 to 24 months.</div>
+    <div class="item-meta">
+      <span class="tag tag-general">General</span>
+      <a class="source" href="https://www.cnbc.com/2026/08/10/nvidia-wall-street-asset-managers-500-billion-ai-push.html" target="_blank" rel="noopener">Read source →</a>
+      <span class="source-host">cnbc.com · 10 Aug 2026</span>
+    </div>
+  </article>
 
   <article class="item">
     <h3>Google DeepMind leadership overhaul: Hassabis moves to Chair as Demis exits day-to-day AI, Jeff Dean departs after 27 years to found Discovery Loop</h3>
@@ -185,17 +196,6 @@
       <span class="tag tag-general">General</span>
       <a class="source" href="https://www.bloomberg.com/news/articles/2026-08-03/openai-anthropic-google-to-join-white-house-ai-safety-meeting" target="_blank" rel="noopener">Read source →</a>
       <span class="source-host">bloomberg.com · 3 Aug 2026</span>
-    </div>
-  </article>
-
-  <article class="item">
-    <h3>UK chip startup OLIX raises $312M Series B at $3.3B valuation for photonic AI inference chips — UK Sovereign AI fund co-invests</h3>
-    <p>London-based <strong>OLIX</strong> closed a <strong>$312 million Series B</strong> on <strong>3 August 2026</strong>, more than tripling its valuation to <strong>$3.3 billion</strong> from the $1 billion it reached at Series A just six months prior. The round was co-led by <strong>Fundomo, Arm, and Hudson River Trading</strong>, with all existing investors increasing their positions and the <strong>UK government's Sovereign AI venture fund</strong> also participating. OLIX develops <strong>photonic AI inference chips</strong> — optical rather than electrical interconnects — that eliminate dependence on HBM memory, the principal bandwidth bottleneck in conventional GPU-based inference. The company designs its full system end-to-end: chips, lasers, and the optical network connecting them. <strong>First chip delivery to customers is expected in H2 2027</strong>. The $312M round is the largest semiconductor funding event in UK history.</p>
-    <div class="why-it-matters"><strong>Why it matters:</strong> Photonic inference is the most architecturally distinct alternative to Nvidia GPU-based AI infrastructure currently attracting serious institutional capital. Eliminating HBM dependency targets one of the primary bottlenecks in large-scale inference workloads, and if OLIX delivers at production scale in 2027, the energy and throughput implications for high-volume inference could be material — particularly as the frontier AI cost curve puts pressure on operators to find alternatives to GPU-dense deployments. Arm's presence in the investor group is a notable signal: a chip IP company with interests across the compute stack co-investing in photonic inference suggests growing industry conviction that the GPU is not the end-state architecture for AI inference at scale. The UK government's participation reflects national-level interest in maintaining a domestic position in the AI chip supply chain, independent of US and Asian semiconductor supply.</div>
-    <div class="item-meta">
-      <span class="tag tag-general">General</span>
-      <a class="source" href="https://www.techtimes.com/articles/322816/20260803/olix-raises-312m-photonic-ai-chip-that-ditches-hbm-britains-biggest-semiconductor-bet.htm" target="_blank" rel="noopener">Read source →</a>
-      <span class="source-host">techtimes.com · 3 Aug 2026</span>
     </div>
   </article>
 
@@ -283,24 +283,35 @@
   <h2>Models &amp; Tools</h2>
 
   <article class="item">
-    <h3>Alibaba releases Qwen3.8-Max — 2.4-trillion-parameter MoE model with benchmark claims rivaling Fable 5, open weights arriving next week</h3>
-    <p>Alibaba made its next-generation flagship AI model <strong>Qwen3.8-Max</strong> globally accessible on <strong>3 August 2026</strong>, ahead of a planned open-weight release expected the following week. Qwen3.8-Max is a <strong>2.4-trillion-parameter sparse Mixture-of-Experts model</strong> that activates <strong>95 billion parameters at a time</strong>, with a <strong>1-million-token context window</strong> and native support for text, image, and video input. Alibaba published results showing benchmark scores <strong>comparable to or exceeding Anthropic's Fable 5</strong> across a range of tasks — a model that was temporarily subject to US export controls due to its advanced capabilities. The model is available via <strong>Alibaba Cloud's Model Studio APIs</strong> and through <strong>QwenWork</strong>, the company's workplace AI agent platform. Open weights — the first time Alibaba has open-sourced a model at this scale — are planned for release the week of 10 August.</p>
-    <div class="why-it-matters"><strong>Why it matters:</strong> At 2.4 trillion parameters, Qwen3.8-Max is one of the largest models ever released and, once open-weighted, would become the largest open-weight model available for self-hosting — surpassing Kimi K3's 2.8 trillion parameters only if the MoE comparison is made on active-parameter terms (95B activated versus Kimi K3's stated activation count). Frontier benchmark claims at Fable 5 parity — if independently verified — would establish the first open-weight model at genuine frontier capability across multimodal tasks. For enterprise teams evaluating whether to route sensitive or offline workloads through a self-hosted model, the combination of frontier-tier benchmarks and an open-weight release significantly widens the option set. Alibaba is a Chinese company; data residency, export control compliance, and model licensing terms should be assessed before deploying sensitive workloads through the API or planning around the open-weight release.</div>
+    <h3>Meta releases Muse Glimmer: 30-billion-parameter open-weight agentic model designed to run on a single consumer GPU</h3>
+    <p>Meta Superintelligence Labs released <strong>Muse Glimmer</strong> on <strong>10 August 2026</strong>, a <strong>30-billion-parameter open-weight agentic model</strong> distilled from Muse Spark 1.2 and optimised for always-on local agents. The model runs on a single consumer GPU on Mac or PC, is available for free download on <strong>Hugging Face</strong> under an <strong>Apache 2.0 licence</strong>, and supports more than <strong>100 languages</strong>. Muse Glimmer is designed for agentic workloads — long-horizon reasoning, reliable tool calling, failure recovery, coding, and multimodal reasoning — and is compatible with agent frameworks including <strong>OpenClaw</strong>. The release is the first time Meta has shipped an openly licensed model in its Muse family explicitly engineered for <strong>local, always-on personal agent deployment</strong>.</p>
+    <div class="why-it-matters"><strong>Why it matters:</strong> Muse Glimmer is the most capable openly licensed local agentic model released to date at the 30B parameter class, and the Apache 2.0 licence removes the usage restrictions that limited earlier open-weight releases. For teams building pipelines where data residency, latency, or cost make cloud inference impractical, a 30B model purpose-built for tool calling and long-horizon reasoning — runnable on a single consumer GPU — substantially expands the design space for on-premises and edge deployments. The "always-on personal agent" framing signals where Meta's open-model strategy is heading: not just powering third-party products but embedding agentic AI directly into personal computing environments, with implications for enterprise device management, acceptable-use policy, and the boundary between personal and organisational AI use.</div>
     <div class="item-meta">
       <span class="tag tag-models">Models &amp; tools</span>
-      <a class="source" href="https://qz.com/alibaba-qwen38-max-ai-model-launch-080326" target="_blank" rel="noopener">Read source →</a>
-      <span class="source-host">qz.com · 3 Aug 2026</span>
+      <a class="source" href="https://techcrunch.com/2026/08/10/metas-new-glimmer-ai-model-offers-a-hint-at-zuckerbergs-personal-intelligence-vision/" target="_blank" rel="noopener">Read source →</a>
+      <span class="source-host">techcrunch.com · 10 Aug 2026</span>
     </div>
   </article>
 
   <article class="item">
-    <h3>Meta releases Muse Spark 1.2 and launches Muse Code — terminal-based coding agent running multiple sub-agents concurrently</h3>
-    <p>Meta Superintelligence Labs released <strong>Muse Spark 1.2</strong> on <strong>5 August 2026</strong>, alongside the debut of <strong>Muse Code</strong> — a terminal-based coding agent powered by the new model. Muse Code can <strong>write and debug code, complete longer multi-step software development tasks</strong>, and <strong>run multiple sub-agents concurrently</strong> to parallelise work across a codebase. The model and agent are available through the <strong>Meta Model API</strong> and <strong>OpenRouter</strong>. Muse Spark 1.2 succeeds Muse Spark 1.1, which launched on <strong>9 July 2026</strong>, and supports a <strong>1-million-token context window</strong> with multimodal reasoning, coding, and AI-assisted software development as primary design targets.</p>
-    <div class="why-it-matters"><strong>Why it matters:</strong> Muse Code's ability to run multiple concurrent sub-agents on a single task places it in direct competition with coding agent frameworks like Claude Code and Cursor — with the distinction that it ships as a native terminal agent rather than an IDE extension or API wrapper. For engineering teams evaluating AI-assisted software development tooling, Muse Code's concurrent sub-agent architecture is the capability most worth testing in practice: parallelising subtasks within a single coding session is a meaningful workflow change, not only a speed improvement. Meta's Model API availability via OpenRouter also gives enterprise teams an immediate on-ramp without requiring direct Meta account provisioning, which historically added friction to adoption of Meta's developer tools.</div>
+    <h3>OpenAI updates GPT-5.6 Sol in ChatGPT with effort slider — factual errors cut 68%, Luna goes free; o3 retiring 26 August</h3>
+    <p>On <strong>6 August 2026</strong>, OpenAI updated <strong>GPT-5.6 Sol</strong> in ChatGPT with a new <strong>effort slider</strong> for Plus and Pro subscribers, allowing users to choose how much reasoning the model applies to a response — from a quick answer to a deep, extended analysis. OpenAI's own evaluations show the updated Sol produces <strong>68% fewer factual errors</strong> than GPT-5.5 Instant. The update also expands access: <strong>GPT-5.6 Luna is now available to free users with no message cap</strong>. OpenAI described the goal as making higher effort feel like the same model thinking longer, rather than handing off to a distinct system — a deliberate design choice to reduce the cognitive friction of model-switching. <strong>o3 will be retired from ChatGPT on 26 August 2026</strong>, following a 90-day sunset period.</p>
+    <div class="why-it-matters"><strong>Why it matters:</strong> The effort slider introduces a new interaction paradigm that replaces the current binary "chat vs reasoning model" choice with a continuous dial — an approach that reduces the decision overhead for users who currently switch between models manually. The 68% reduction in factual errors is a substantial reliability improvement for everyday professional use cases where accuracy matters more than speed. For teams deploying AI tools to knowledge workers, the Luna-to-free-users expansion means the baseline capability available to employees without a paid plan has increased materially. The o3 retirement continues OpenAI's consolidation of its model line to the GPT-5.6 family, which now covers the full spectrum from free-tier chat to frontier reasoning within a single architecture.</div>
     <div class="item-meta">
       <span class="tag tag-models">Models &amp; tools</span>
-      <a class="source" href="https://finance.yahoo.com/technology/article/meta-debuts-muse-spark-12-and-first-coding-agent-as-it-ramps-up-competition-with-openai-anthropic-213338398.html" target="_blank" rel="noopener">Read source →</a>
-      <span class="source-host">yahoo finance · 5 Aug 2026</span>
+      <a class="source" href="https://9to5mac.com/2026/08/06/openai-updating-chatgpt-with-a-smarter-gpt-5-6-sol-and-unlimited-free-chats/" target="_blank" rel="noopener">Read source →</a>
+      <span class="source-host">9to5mac.com · 6 Aug 2026</span>
+    </div>
+  </article>
+
+  <article class="item">
+    <h3>Alibaba releases Qwen3.8-Max — 2.4-trillion-parameter MoE model with benchmark claims rivaling Fable 5; open weights for Qwen3.8-Max and 27B model expected imminently</h3>
+    <p>Alibaba made its next-generation flagship AI model <strong>Qwen3.8-Max</strong> globally accessible on <strong>3 August 2026</strong>, ahead of an open-weight release planned for the week of <strong>10 August</strong>. Qwen3.8-Max is a <strong>2.4-trillion-parameter sparse Mixture-of-Experts model</strong> that activates <strong>95 billion parameters at a time</strong>, with a <strong>1-million-token context window</strong> and native support for text, image, and video input. Alibaba published benchmark results showing scores <strong>comparable to or exceeding Anthropic's Fable 5</strong> across a range of tasks, including an <strong>OSWorld-Verified score of 86.1</strong> versus Fable 5's 85.0. The model is available via <strong>Alibaba Cloud's Model Studio APIs</strong> at <strong>$2/$6 per million input/output tokens</strong>. Open weights — under Apache 2.0 for both Qwen3.8-Max and a new <strong>Qwen3.8-27B</strong> model — were promised for the week of 10 August on Hugging Face and ModelScope but had not been posted as of <strong>11 August</strong>.</p>
+    <div class="why-it-matters"><strong>Why it matters:</strong> At 2.4 trillion parameters, Qwen3.8-Max is one of the largest models ever built, and once the open weights land, it will become the largest openly licensed model available for self-hosting. Frontier benchmark claims at Fable 5 parity — if independently verified — would establish the first open-weight model at genuine frontier capability across multimodal tasks. For enterprise teams evaluating whether to route sensitive or offline workloads through a self-hosted model, the combination of frontier-tier benchmarks and an open-weight release significantly widens the option set. Alibaba is a Chinese company; data residency, export control compliance, and model licensing terms should be assessed carefully before deploying sensitive workloads through the API or planning around the open-weight release.</div>
+    <div class="item-meta">
+      <span class="tag tag-models">Models &amp; tools</span>
+      <a class="source" href="https://finance.yahoo.com/technology/ai/articles/qwen3-8-max-capability-war-162320284.html" target="_blank" rel="noopener">Read source →</a>
+      <span class="source-host">yahoo finance · 3 Aug 2026</span>
     </div>
   </article>
 
@@ -312,17 +323,6 @@
       <span class="tag tag-models">Models &amp; tools</span>
       <a class="source" href="https://www.techtimes.com/articles/322513/20260731/deepseek-retrained-v4-flash-beats-its-flagship-pro-nine-agent-benchmarks.htm" target="_blank" rel="noopener">Read source →</a>
       <span class="source-host">techtimes.com · 31 Jul 2026</span>
-    </div>
-  </article>
-
-  <article class="item">
-    <h3>OpenAI cuts GPT-5.6 Luna price by 80% and Terra by 20% — Sol gains Fast mode at 2.5× speed, 2× price</h3>
-    <p>On <strong>30 July 2026</strong>, OpenAI slashed prices across two of its three GPT-5.6 tiers: <strong>GPT-5.6 Luna</strong> drops <strong>80%</strong> to <strong>$0.20 input / $1.20 output per million tokens</strong> (from $1/$6), and <strong>GPT-5.6 Terra</strong> drops <strong>20%</strong> to <strong>$2 input / $12 output per million tokens</strong> (from $2.50/$15). <strong>Sol pricing is unchanged at $5/$30</strong>. OpenAI attributed both cuts to efficiency gains discovered during Sol's internal development — Sol rewrote portions of its own production inference stack, reducing per-token compute cost far enough to fund the cuts on the lighter tiers. Simultaneously, OpenAI introduced <strong>Fast mode for GPT-5.6 Sol</strong>, delivering up to <strong>2.5× faster output</strong> at twice the standard Sol price, replacing the previous Priority Processing tier.</p>
-    <div class="why-it-matters"><strong>Why it matters:</strong> An 80% price cut on Luna brings GPT-5.6 quality to near-commodity pricing — at $0.20 per million input tokens, the cost of routing high-volume inference through a frontier model drops to a level that removes pricing as a barrier for most production use cases. For teams currently using older or smaller models to manage cost, Luna's new price point makes a quality upgrade straightforward to justify. Sol's Fast mode also establishes a formal high-speed tier for latency-sensitive agentic workflows without requiring a model downgrade — a distinct option from the existing standard/batch split. The efficiency origin story — a model rewriting its own inference stack to fund its own price cuts — is worth tracking as an indicator of where inference optimisation is heading.</div>
-    <div class="item-meta">
-      <span class="tag tag-models">Models &amp; tools</span>
-      <a class="source" href="https://www.cnbc.com/2026/07/30/open-ai-price-cut-gpt.html" target="_blank" rel="noopener">Read source →</a>
-      <span class="source-host">cnbc.com · 30 Jul 2026</span>
     </div>
   </article>
 
