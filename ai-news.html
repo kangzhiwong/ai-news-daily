@@ -159,12 +159,34 @@
   <header>
     <h1>AI News Digest</h1>
     <p class="subtitle">Items from the <strong>last 2 weeks</strong> across general AI, the audit profession, models &amp; tools, and governance.</p>
-    <p class="subtitle">Last updated: <strong>12 August 2026</strong> · Auto-refreshes daily at <strong>09:00 SGT</strong>.</p>
+    <p class="subtitle">Last updated: <strong>13 August 2026</strong> · Auto-refreshes daily at <strong>09:00 SGT</strong>.</p>
     <p class="intro">A snapshot of recent AI developments — broader industry signals, activity in the audit profession, the models and tools changing what teams can build, and the governance landscape shaping how AI gets deployed.</p>
   </header>
 
   <!-- ─────────── GENERAL AI NEWS ─────────── -->
   <h2>General AI News</h2>
+
+  <article class="item">
+    <h3>Anthropic embeds invisible watermarks in all Claude-generated text globally — EU AI Act Article 50 compliance applied worldwide, not just within the EU</h3>
+    <p>Anthropic announced on <strong>11 August 2026</strong> that every Claude model released on or after <strong>2 August 2026</strong> now embeds an invisible <strong>statistical watermark</strong> directly into generated text — and applies the mark <strong>globally</strong>, not only to API calls originating within the European Union. The immediate regulatory trigger is <strong>EU AI Act Article 50</strong>, enforceable from 2 August, which requires generative AI providers to embed machine-readable marks in AI-generated outputs so that downstream users, platforms, and regulators can identify AI-produced content. Generated image and vector files additionally carry signed <strong>C2PA provenance metadata</strong> recording creation details and recording whether the file has been altered. A detected watermark indicates that Claude <strong>may have processed</strong> the content — but does not confirm authorship, and marks can be stripped through format conversion, re-saving, or screenshots.</p>
+    <div class="why-it-matters"><strong>Why it matters:</strong> Anthropic's decision to apply watermarking globally — rather than restricting the mark to EU API calls — sets a precedent for how frontier AI providers interpret extraterritorial content-marking mandates, and effectively imports Article 50 obligations into every jurisdiction where Claude is used. Compliance and content-governance teams at organisations deploying Claude in document production, client-facing deliverables, or professional reports should assess whether watermarks survive in their downstream workflows, and how clients or counterparties may interpret detected marks. The C2PA provenance metadata on image outputs introduces a persistent provenance chain into AI-generated assets that did not previously exist — a development with practical implications for creative, legal, and financial documentation processes that now regularly incorporate AI-generated visual content, and for organisations whose clients or regulators are beginning to ask how AI-generated outputs are identified and tracked in professional deliverables.</div>
+    <div class="item-meta">
+      <span class="tag tag-general">General</span>
+      <a class="source" href="https://techcrunch.com/2026/08/11/anthropic-says-it-will-watermark-text-generated-by-its-ai-models/" target="_blank" rel="noopener">Read source →</a>
+      <span class="source-host">techcrunch.com · 11 Aug 2026</span>
+    </div>
+  </article>
+
+  <article class="item">
+    <h3>ChatGPT crosses 1 billion weekly active users — seven months ahead of target as GPT-5.6 Luna extends to free tier with no message cap</h3>
+    <p>OpenAI confirmed on <strong>6 August 2026</strong> that ChatGPT had surpassed <strong>1 billion weekly active users worldwide</strong>, approximately <strong>seven months ahead of its internal target</strong> and faster than any consumer platform has reached that milestone. ChatGPT separately crossed <strong>1 billion global monthly active app users</strong> in May 2026, outpacing the early growth of Google Maps, TikTok, and Instagram. The milestone was announced alongside updates to <strong>GPT-5.6 Sol</strong> — including a new <strong>effort slider</strong> for paid subscribers — and the expansion of <strong>GPT-5.6 Luna to all free users with no message cap</strong>. OpenAI's annualised revenue is running at approximately <strong>$25 billion</strong>. ChatGPT's weekly active user count grew from <strong>200 million to 1 billion in roughly 18 months</strong>.</p>
+    <div class="why-it-matters"><strong>Why it matters:</strong> A weekly active user count of 1 billion places ChatGPT within the tier of the world's largest consumer platforms — a scale that shapes workplace AI norms faster than any enterprise deployment programme could. For organisations managing AI adoption, the practical implication is that the majority of employees are now regular ChatGPT users before any internal rollout, which changes the baseline expectation and behaviour that AI-use policies must address. OpenAI's simultaneous extension of GPT-5.6 Luna — a materially more capable model than previous free-tier offerings — with no message cap is equally significant: it eliminates cost as a barrier to daily AI use across the global workforce, accelerating the gap between what employees do informally and what is officially sanctioned within organisational AI frameworks. Enterprise AI programmes that have been calibrated around limiting access or managing model capability are operating in a fundamentally different environment from this date.</div>
+    <div class="item-meta">
+      <span class="tag tag-general">General</span>
+      <a class="source" href="https://tech.yahoo.com/ai/chatgpt/articles/chatgpt-tops-1b-weekly-users-191537749.html" target="_blank" rel="noopener">Read source →</a>
+      <span class="source-host">yahoo tech · 6 Aug 2026</span>
+    </div>
+  </article>
 
   <article class="item">
     <h3>Anthropic, Macquarie, and GIC launch Theseus Infrastructure — dedicated AI data centre joint venture to build US compute at scale</h3>
@@ -196,28 +218,6 @@
       <span class="tag tag-general">General</span>
       <a class="source" href="https://www.axios.com/2026/08/06/googles-ai-leadership-shuffle" target="_blank" rel="noopener">Read source →</a>
       <span class="source-host">axios.com · 6 Aug 2026</span>
-    </div>
-  </article>
-
-  <article class="item">
-    <h3>White House convenes frontier AI safety summit — OpenAI, Anthropic, Google in attendance as EO 14409 voluntary framework remains unsigned</h3>
-    <p>The Trump administration hosted <strong>OpenAI, Anthropic, and Google</strong> at the White House on <strong>3 August 2026</strong> to advance a voluntary AI model safety review framework — two days after the <strong>1 August EO 14409 deadline</strong> passed without publication. The meeting focused on finalising the definition of <strong>"covered frontier model"</strong> that triggers pre-release government review obligations, the process for the <strong>NSA and CAISI</strong> to conduct classified benchmarking, and operational details for the review window. <strong>GPT-5.6's 12-day restricted pre-release</strong> remains the sole practical precedent for review duration. <strong>Meta's open-weight Llama models remain outside the agreement</strong>. No formal framework was published at the summit's conclusion; interagency deliberations are continuing.</p>
-    <div class="why-it-matters"><strong>Why it matters:</strong> The August 3 summit confirms the administration intends to pursue the framework rather than abandon it following the missed deadline, while also confirming that no binding capability threshold or formal review process is yet in place. For enterprise teams and product builders relying on frontier APIs, the continued absence of a published framework means ambiguity about which future model releases will carry mandatory review delays — and by how much — persists into H2 2026. The summit also crystallises the open-weight asymmetry: closed-API providers face pre-release government review; Meta's open-weight releases do not. This structural difference will increasingly shape how regulators and enterprise risk managers assess access parity and deployment risk across different AI supply architectures.</div>
-    <div class="item-meta">
-      <span class="tag tag-general">General</span>
-      <a class="source" href="https://www.bloomberg.com/news/articles/2026-08-03/openai-anthropic-google-to-join-white-house-ai-safety-meeting" target="_blank" rel="noopener">Read source →</a>
-      <span class="source-host">bloomberg.com · 3 Aug 2026</span>
-    </div>
-  </article>
-
-  <article class="item">
-    <h3>Microsoft Q4 FY2026: Azure surpasses $100 billion annual revenue for the first time, Copilot crosses 30 million paid seats</h3>
-    <p>Microsoft reported Q4 FY2026 revenue of <strong>$90.0 billion</strong> (+18% YoY) with net income of <strong>$35.8 billion</strong> (+31%). <strong>Azure and other cloud services grew 43% year-over-year</strong> — driven almost entirely by AI compute and inference demand — and Azure revenue <strong>surpassed $100 billion annually for the first time</strong> across the full fiscal year. <strong>Microsoft 365 Copilot reached more than 30 million paid seats</strong>, implying an annualised subscription run rate of approximately <strong>$10 billion</strong>. Microsoft Cloud revenue was <strong>$59.3 billion</strong> (+27%). The company also recognised a <strong>$3.2 billion gain from its Anthropic investment</strong> in the quarter. Azure's 43% growth outpaced analyst consensus of 39% and represents an acceleration from prior quarters, marking the third consecutive quarter of Azure growth above 40%.</p>
-    <div class="why-it-matters"><strong>Why it matters:</strong> Azure's sustained acceleration — from single-digit cloud growth rates two years ago to 43% in Q4 FY2026 — is the clearest public indicator of how fast enterprise AI workloads are translating into incremental cloud spend. Organisations benchmarking AI infrastructure costs should note that sustained demand at this rate compresses available compute capacity and sustains pricing power, with direct implications for inference cost forecasting. Copilot reaching 30 million paid seats is equally significant as a market calibration: at that scale, per-seat AI assistant adoption has crossed from pilot to mainstream enterprise procurement, making it a structural line item rather than an experiment. The $3.2 billion Anthropic gain also illustrates how the frontier AI investment landscape is now producing material balance-sheet effects at publicly traded technology companies.</div>
-    <div class="item-meta">
-      <span class="tag tag-general">General</span>
-      <a class="source" href="https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast" target="_blank" rel="noopener">Read source →</a>
-      <span class="source-host">microsoft.com · 30 Jul 2026</span>
     </div>
   </article>
 
@@ -283,6 +283,17 @@
   <h2>Models &amp; Tools</h2>
 
   <article class="item">
+    <h3>Meta launches Muse Spark 1.2 with one-million-token context and Muse Code agent — purpose-built for entire-codebase reasoning, open-weight release planned</h3>
+    <p>Meta Superintelligence Labs announced on <strong>5 August 2026</strong> the release of <strong>Muse Spark 1.2</strong>, a flagship model built for complex software engineering tasks, alongside <strong>Muse Code</strong> — Meta's first dedicated coding agent, available in beta on macOS and Linux. Muse Spark 1.2 ships with a <strong>one-million-token context window</strong>, improved first-attempt coding accuracy, and deep integration with <strong>asynchronous background agents</strong> capable of validating changes across thousands of files simultaneously. Meta separately announced on <strong>10 August</strong> that Muse Spark 1.2 weights would be <strong>open-sourced</strong>, which would make it the most capable US-origin open-weight coding model currently available. The release marks Meta's <strong>third major Muse family model in four months</strong>, following Muse Spark 1.1 in July and Muse Glimmer on 10 August.</p>
+    <div class="why-it-matters"><strong>Why it matters:</strong> A one-million-token context window in a purpose-built coding model changes the practical capability ceiling for tasks that require holding an entire codebase in memory — refactoring, cross-file dependency analysis, security review, and multi-service integration work — rather than operating on isolated file-level snippets. Muse Code's asynchronous execution model extends the agentic pattern into software development toolchains specifically, enabling multi-step background task completion rather than synchronous interaction. Meta's planned open-weight release of Spark 1.2 is significant for teams with data residency, latency, or cost constraints: a frontier-class coding model available for self-hosted deployment materially expands the set of viable architectures for organisations that cannot or prefer not to rely on ongoing API dependency on a closed provider.</div>
+    <div class="item-meta">
+      <span class="tag tag-models">Models &amp; tools</span>
+      <a class="source" href="https://finance.yahoo.com/technology/article/meta-debuts-muse-spark-12-and-first-coding-agent-as-it-ramps-up-competition-with-openai-anthropic-213338398.html" target="_blank" rel="noopener">Read source →</a>
+      <span class="source-host">yahoo finance · 5 Aug 2026</span>
+    </div>
+  </article>
+
+  <article class="item">
     <h3>Meta releases Muse Glimmer: 30-billion-parameter open-weight agentic model designed to run on a single consumer GPU</h3>
     <p>Meta Superintelligence Labs released <strong>Muse Glimmer</strong> on <strong>10 August 2026</strong>, a <strong>30-billion-parameter open-weight agentic model</strong> distilled from Muse Spark 1.2 and optimised for always-on local agents. The model runs on a single consumer GPU on Mac or PC, is available for free download on <strong>Hugging Face</strong> under an <strong>Apache 2.0 licence</strong>, and supports more than <strong>100 languages</strong>. Muse Glimmer is designed for agentic workloads — long-horizon reasoning, reliable tool calling, failure recovery, coding, and multimodal reasoning — and is compatible with agent frameworks including <strong>OpenClaw</strong>. The release is the first time Meta has shipped an openly licensed model in its Muse family explicitly engineered for <strong>local, always-on personal agent deployment</strong>.</p>
     <div class="why-it-matters"><strong>Why it matters:</strong> Muse Glimmer is the most capable openly licensed local agentic model released to date at the 30B parameter class, and the Apache 2.0 licence removes the usage restrictions that limited earlier open-weight releases. For teams building pipelines where data residency, latency, or cost make cloud inference impractical, a 30B model purpose-built for tool calling and long-horizon reasoning — runnable on a single consumer GPU — substantially expands the design space for on-premises and edge deployments. The "always-on personal agent" framing signals where Meta's open-model strategy is heading: not just powering third-party products but embedding agentic AI directly into personal computing environments, with implications for enterprise device management, acceptable-use policy, and the boundary between personal and organisational AI use.</div>
@@ -306,7 +317,7 @@
 
   <article class="item">
     <h3>Alibaba releases Qwen3.8-Max — 2.4-trillion-parameter MoE model with benchmark claims rivaling Fable 5; open weights for Qwen3.8-Max and 27B model delayed past promised date</h3>
-    <p>Alibaba made its next-generation flagship AI model <strong>Qwen3.8-Max</strong> globally accessible on <strong>3 August 2026</strong>, ahead of an open-weight release originally promised for the week of <strong>10 August</strong>. Qwen3.8-Max is a <strong>2.4-trillion-parameter sparse Mixture-of-Experts model</strong> that activates <strong>95 billion parameters at a time</strong>, with a <strong>1-million-token context window</strong> and native support for text, image, and video input. Alibaba published benchmark results showing scores <strong>comparable to or exceeding Anthropic's Fable 5</strong> across a range of tasks, including an <strong>OSWorld-Verified score of 86.1</strong> versus Fable 5's 85.0. The model is available via <strong>Alibaba Cloud's Model Studio APIs</strong> at <strong>$2/$6 per million input/output tokens</strong>. Open weights — under Apache 2.0 for both Qwen3.8-Max and a new <strong>Qwen3.8-27B</strong> model — were promised for the week of 10 August on Hugging Face and ModelScope but <strong>had not been posted as of 12 August</strong>.</p>
+    <p>Alibaba made its next-generation flagship AI model <strong>Qwen3.8-Max</strong> globally accessible on <strong>3 August 2026</strong>, ahead of an open-weight release originally promised for the week of <strong>10 August</strong>. Qwen3.8-Max is a <strong>2.4-trillion-parameter sparse Mixture-of-Experts model</strong> that activates <strong>95 billion parameters at a time</strong>, with a <strong>1-million-token context window</strong> and native support for text, image, and video input. Alibaba published benchmark results showing scores <strong>comparable to or exceeding Anthropic's Fable 5</strong> across a range of tasks, including an <strong>OSWorld-Verified score of 86.1</strong> versus Fable 5's 85.0. The model is available via <strong>Alibaba Cloud's Model Studio APIs</strong> at <strong>$2/$6 per million input/output tokens</strong>. Open weights — under Apache 2.0 for both Qwen3.8-Max and a new <strong>Qwen3.8-27B</strong> model — were promised for the week of 10 August on Hugging Face and ModelScope but <strong>had not been posted as of 13 August</strong>.</p>
     <div class="why-it-matters"><strong>Why it matters:</strong> At 2.4 trillion parameters, Qwen3.8-Max is one of the largest models ever built, and once the open weights land, it will become the largest openly licensed model available for self-hosting. Frontier benchmark claims at Fable 5 parity — if independently verified — would establish the first open-weight model at genuine frontier capability across multimodal tasks. For enterprise teams evaluating whether to route sensitive or offline workloads through a self-hosted model, the combination of frontier-tier benchmarks and an open-weight release significantly widens the option set. Alibaba is a Chinese company; data residency, export control compliance, and model licensing terms should be assessed carefully before deploying sensitive workloads through the API or planning around the open-weight release.</div>
     <div class="item-meta">
       <span class="tag tag-models">Models &amp; tools</span>
@@ -315,19 +326,19 @@
     </div>
   </article>
 
-  <article class="item">
-    <h3>DeepSeek V4-Flash-0731 official release: re-post-trained 284B model beats its own flagship Pro on nine agent benchmarks at one-third the price</h3>
-    <p>DeepSeek released the official version of <strong>DeepSeek V4-Flash</strong> on <strong>31 July 2026</strong> under build designation <strong>V4-Flash-0731</strong>. The model shares its architecture with the V4-Flash-Preview — a <strong>284-billion-parameter sparse Mixture-of-Experts model with a 1-million-token context window</strong> — but underwent an additional round of post-training that dramatically improved agentic, coding, and tool-calling performance without any architectural change. On <strong>DeepSWE</strong> coding benchmarks the official build scores <strong>54.4</strong> versus <strong>7.3</strong> for the preview — a <strong>645% improvement through re-post-training alone</strong>. V4-Flash-0731 now outperforms <strong>DeepSeek V4-Pro-Preview on all nine agent and coding benchmarks</strong> measured, at approximately <strong>$0.15 / $0.29 per million input/output tokens</strong> — roughly <strong>one-third of V4-Pro's cost</strong>.</p>
-    <div class="why-it-matters"><strong>Why it matters:</strong> The result shows that a targeted post-training investment can produce flagship-tier agentic capability from a smaller, cheaper model without architectural changes — a materially useful finding for teams choosing between performance tiers. At $0.15/$0.29 per million tokens, V4-Flash undercuts GPT-5.6 Luna's post-discount price on output, making it the most cost-competitive frontier-class API option currently available for coding and agent-heavy workloads. For high-volume pipelines where multi-step reasoning and tool-calling dominate, the combination of pro-tier benchmark performance and economy pricing represents a new calibration point on the cost-performance frontier. DeepSeek is a Chinese company; organisations should assess data residency, inference routing, and applicable export controls before routing sensitive workloads through the API.</div>
-    <div class="item-meta">
-      <span class="tag tag-models">Models &amp; tools</span>
-      <a class="source" href="https://www.techtimes.com/articles/322513/20260731/deepseek-retrained-v4-flash-beats-its-flagship-pro-nine-agent-benchmarks.htm" target="_blank" rel="noopener">Read source →</a>
-      <span class="source-host">techtimes.com · 31 Jul 2026</span>
-    </div>
-  </article>
-
   <!-- ─────────── GOVERNANCE ─────────── -->
   <h2>AI Governance &amp; Regulation</h2>
+
+  <article class="item">
+    <h3>50+ Global South nations open Geneva AI Sovereignty Summit — Geneva Compact draft and pooled-compute agreements target a third governance axis alongside EU and US frameworks</h3>
+    <p>Ministers, researchers, and civil-society leaders from <strong>more than 50 nations of the Global South</strong> convened at the <strong>Palais des Nations in Geneva</strong> on <strong>12–14 August 2026</strong> for the AI for Developing Countries Forum (AIFOD) summit. The summit's centrepiece is the drafting of the <strong>Geneva Compact on AI Sovereignty</strong> — a framework intended to codify principles around national control of AI infrastructure, data, and model development — alongside the signing of <strong>pooled-compute bilateral agreements</strong> between participating nations. The summit follows the UN Global Dialogue on AI Governance held in Geneva in <strong>July 2026</strong>, attended by all <strong>193 UN member states</strong>, and a separate intergovernmental AI summit convened in June. Day three (<strong>14 August</strong>) is expected to produce formal commitment announcements, with the next convening set for <strong>Nairobi 2027</strong>.</p>
+    <div class="why-it-matters"><strong>Why it matters:</strong> The Geneva Compact represents the first formal attempt by Global South nations to articulate AI sovereignty principles as a negotiated multilateral framework rather than as domestic policy responses. If the Compact advances to adoption, it would establish a third governance reference point — alongside the EU AI Act and the US voluntary framework — with its own principles around data residency, compute ownership, model access, and technology transfer. Organisations operating across international markets, or advising clients with exposure to signatory nations, should track the Compact's final text: its provisions on pooled compute and sovereign model development could reshape procurement terms, data localisation expectations, and the competitive landscape for AI services across participating markets. The Nairobi 2027 follow-up also signals that this process is building institutional continuity rather than producing a one-time declaration.</div>
+    <div class="item-meta">
+      <span class="tag tag-governance">Governance</span>
+      <a class="source" href="https://www.issuewire.com/not-another-communiqu-50-nations-to-draft-the-geneva-compact-on-ai-sovereignty-and-sign-pooled-compute-deals-1870569424722300" target="_blank" rel="noopener">Read source →</a>
+      <span class="source-host">issuewire.com · 12 Aug 2026</span>
+    </div>
+  </article>
 
   <article class="item">
     <h3>EU AI Act Article 50 transparency and GPAI enforcement now active — Commission fining powers live as of 2 August; high-risk obligations remain deferred to December 2027</h3>
@@ -337,17 +348,6 @@
       <span class="tag tag-governance">Governance</span>
       <a class="source" href="https://www.jurist.org/news/2026/08/european-commission-announces-ai-companies-to-face-tighter-eu-oversight-over-deepfakes-and-cyber-threats/" target="_blank" rel="noopener">Read source →</a>
       <span class="source-host">jurist.org · 2 Aug 2026</span>
-    </div>
-  </article>
-
-  <article class="item">
-    <h3>California AI Transparency Act (SB 942) effective August 2 — watermarking and detection tool obligations join a growing US state AI compliance layer</h3>
-    <p><strong>California's AI Transparency Act (SB 942)</strong> became effective on <strong>2 August 2026</strong>, requiring <strong>generative AI providers operating in California</strong> to offer watermarks and latent disclosures in AI-generated content, along with detection tools that allow users and third parties to identify AI-generated outputs. The law applies to providers meeting a defined compute threshold, making it applicable to all major commercial LLM and image-generation APIs. The SB 942 obligations sit alongside the separately effective <strong>AB 853</strong> downstream-licensee disclosure requirements, together establishing California as the most comprehensive US state AI transparency regime. <strong>Colorado's SB 26-189</strong>, signed 14 May 2026, replaces the state's original 2024 AI Act and reframes its scope around <strong>Automated Decision-Making Technology</strong> with obligations taking effect <strong>1 January 2027</strong>. A White House National Policy Framework released in March 2026 urged Congress to preempt this growing state-law patchwork with a uniform federal approach — that legislation has not advanced as of August 2026.</p>
-    <div class="why-it-matters"><strong>Why it matters:</strong> With California's SB 942 and AB 853 both now in effect, enterprises distributing or embedding generative AI products in the US face layered state-level obligations that require active compliance programmes — not just contractual pass-throughs from AI vendors. Colorado's revised law extends the compliance horizon further: starting January 2027, developers of covered automated decision-making systems must provide deployers with technical documentation on intended uses, training data categories, known limitations, and human-review instructions. For AI-deploying organisations operating across multiple US states, the compliance architecture is now materially more complex than a single federal framework would require. Legal and risk teams should map current product deployments against California and Colorado obligations before the next wave of state laws expected to take effect in 2027.</div>
-    <div class="item-meta">
-      <span class="tag tag-governance">Governance</span>
-      <a class="source" href="https://vorplabs.com/ai-regulatory-updates/united-states/california" target="_blank" rel="noopener">Read source →</a>
-      <span class="source-host">vorplabs.com · 2 Aug 2026</span>
     </div>
   </article>
 
